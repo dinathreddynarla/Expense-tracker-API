@@ -1,12 +1,12 @@
 const express = require("express")
 const fs = require("fs")
 const bodyParser = require('body-parser');
-
+const cors = require("cors")
 const app = express()
 const PORT = 3333;
 
 app.use(bodyParser.json());
-
+app.use(cors())
 //Utility Function
 const JSON_FILE = './data.json';
 
